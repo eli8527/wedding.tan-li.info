@@ -13,8 +13,10 @@ body {
 }
 
 nav {
-  position: sticky;
-  top: var(--gutter);
+  @include desktop {
+    position: sticky;
+    top: var(--gutter);
+  }
 }
 
 main {
