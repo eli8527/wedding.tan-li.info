@@ -326,9 +326,11 @@ body {
   background-color: var(--color--pink);
 }
 
-nav {
-  position: sticky;
-  top: var(--gutter);
+@media (min-width: 768px) {
+  nav {
+    position: sticky;
+    top: var(--gutter);
+  }
 }
 
 main {
