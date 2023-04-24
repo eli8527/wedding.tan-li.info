@@ -1,0 +1,54 @@
+@use 'reset';
+@use 'mixins' as *;
+@use 'fonts';
+@use 'typography';
+// @use 'sprites';
+@use 'links';
+@use 'images';
+
+@use 'layout';
+// @use 'markdown';
+// @use 'nav';
+// @use 'home';
+// @use 'about';
+// @use 'work';
+
+:root {
+  @extend %font--heldane;
+
+  --typography--leading: 1.1;
+
+  --typography--size: 1.8rem;
+  --typography--size--card: calc(var(--typography--size) * 1.45);
+  --typography--size--h1: calc(var(--typography--size) * 2.5);
+  --typography--size--h2: calc(var(--typography--size) * 2);
+  --typography--size--caption: calc(var(--typography--size) * 0.875);
+
+  --gutter: 2.4rem;
+  --max-width: 110.0rem;
+
+  --grid-columns: 12;
+
+  --color--white: #FAFAFA;
+  --color--pink: #FBE3D7;
+  --color--gray: #ddd;
+  --color--black: #000;
+
+  --transition--timing: 500ms;
+  --transition: var(--transition--timing) all;
+
+  scroll-behavior: smooth;
+
+  @include tiny {
+    --typography--size--card: calc(var(--typography--size) * 1.375);
+  }
+
+  @include desktop {
+    --typography--size: 2.0rem;
+    --typography--size--card: calc(var(--typography--size) * 2.5);
+    --typography--size--h1: calc(var(--typography--size) * 3);
+    --typography--size--h2: calc(var(--typography--size) * 2);
+
+    --gutter: 3.2rem;
+  }
+}

@@ -1,0 +1,220 @@
+@use 'fonts';
+@use 'typography';
+@use 'mixins' as *;
+
+:root {
+  --card--main--height: 80vh;
+  --card--footer--height: 10vh;
+
+  @supports(height: 100svh) {
+    --card--main--height: 80svh;
+    --card--footer--height: 10svh;
+  }
+}
+
+body.home {
+  header {
+    --color: var(--color--white);
+    --color--link: var(--color--white);
+    
+    background-color: var(--color--blue);
+    display: grid;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    grid-template-rows: var(--card--main--height) 1fr var(--card--footer--height);
+    transition: var(--transition);
+
+    > * {
+      padding: var(--gutter);
+      display: flex;
+      align-items: center;
+      opacity: 1;
+      transition: var(--transition);
+    }
+
+    div:first-of-type {
+      grid-row: span 1;
+    }
+
+    div:last-of-type {
+      grid-row: 3 / span 1;
+      opacity: 0;
+    }
+
+    article {
+      @extend %font--arnhem;
+
+      --typography--leading: var(--typography--leading--heading);
+      --typography--size: var(--typography--size--card);
+      
+      h1 {
+        --typography--size: var(--typography--size--card);
+      }
+    }
+
+    &.show-footer {
+      div:first-of-type {
+        opacity: 0;
+      }
+      div:last-of-type {
+        opacity: 1;
+      }
+    }
+  }
+  
+  header + main {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  nav {
+    span.nav__name {
+      display: none;
+    }
+  }
+
+  main {
+    margin-top: var(--card--main--height);
+    margin-bottom: var(--card--footer--height);
+    gap: calc(4 * var(--gutter));
+
+    > section:last-child {
+      margin-top: unset;
+    }
+
+    .work {
+      @extend %type--layout;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: var(--gutter);
+
+      &__list {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--gutter);
+        
+        @include desktop {
+          grid-template-columns: repeat(var(--grid, 2), minmax(0, 1fr));
+        }
+
+        li {
+          @extend %type--layout;          
+
+          @include desktop {
+            grid-column: span var(--span, 1);
+          }
+          a {
+            color: currentColor;
+            display: grid;
+            gap: calc(0.5 * var(--gutter));
+            grid-template-rows: fit-content 1fr;
+
+            > figure {
+              aspect-ratio: 3/2;
+
+              > img, > button > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+
+              .image-mat img {
+                max-width: 100%;
+                max-height: 100%;
+              }
+            }
+          }
+
+          h3 {
+            color: var(--color--blue);
+          }
+
+          h3 + p {
+            margin-top: var(--typography--between);
+          }
+        }
+      }
+    }
+
+    .chronology {
+      display: flex;
+      flex-direction: column;
+      gap: calc(2 * var(--gutter));
+
+      dl {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        
+        @include desktop {
+          grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+        }
+        
+        dt {
+          padding-top: calc(1 * var(--gutter));
+          border-top: 1px solid black;
+          display: grid;
+          gap: var(--gutter);
+          grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+
+          @include desktop {
+            padding-top: calc(0.5 * var(--gutter));
+            padding-bottom: calc(0.5 * var(--gutter));
+
+            &:last-of-type {
+              border-bottom: 1px solid black;
+            }
+          }
+        }
+
+        dd {
+          padding-top: calc(1 * var(--gutter));
+          padding-bottom: calc(1 * var(--gutter));
+
+          &:last-of-type {
+            border-bottom: 1px solid black;
+          }
+          
+          @include desktop {
+            padding-top: calc(0.5 * var(--gutter));
+            padding-bottom: calc(0.5 * var(--gutter));
+          
+            border-top: 1px solid black;
+            padding-left: var(--gutter);
+          }
+        }
+
+        dd + dd {
+          border-top: none;
+          padding-left: unset;
+          padding-top: unset;
+
+          @include desktop {
+            grid-column: span 2;
+          }
+          
+          ul {
+            display: flex;
+            gap: calc(0.5 * var(--gutter));
+            overflow-x: scroll;
+            overflow-y: hidden;
+            
+            li {
+              flex-shrink: 0;
+              height: calc(7 * var(--gutter));
+
+              > figure {
+                height: 100%;
+                
+                img {
+                  height: 100%;
+                  width: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

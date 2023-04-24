@@ -1,0 +1,94 @@
+@use 'typography';
+
+article {
+  @extend %type--layout;
+
+  --typography--leading-shoulder: calc(var(--typography--between) + var(--typography--line-height));
+
+  > *:not(:first-child) { margin-top: var(--margin--top, var(--typography--leading-shoulder)) }
+	> figure {
+		--margin--top: calc(2 * var(--gutter));
+
+		+ * {
+			--margin--top: calc(2 * var(--gutter));
+		}
+	}
+
+  h2 {
+    --margin--top: calc(2 * var(--gutter));
+  }
+
+  h3 {
+    --margin--top: calc(var(--typography--between) + (var(--typography--line-height) * 2));
+  }
+
+	p, li {
+		&:not(._) {
+			max-width: 75ch;
+		}
+	}
+
+	aside {
+		--margin--top: calc(var(--typography--between) + (var(--typography--line-height) * 2));
+		@extend em;
+	}
+
+  hr {
+    --margin--top: calc(2 * var(--gutter));
+		border-top: 1px solid black;
+  }
+
+  ul,
+	ol { gap: var(--typography--between) }
+
+	dl { gap: var(--typography--leading-shoulder) }
+
+	ul,
+	ol,
+	dl {
+		@extend %type--layout;
+
+		display:               grid;
+		grid-template-columns: minmax(0, 1fr); // Since “auto” is the min otherwise.
+		list-style-position:   outside;
+
+		> dt,
+		> dd,
+		> li {
+			@extend %typography; // For paragraph-less lists.
+
+			margin-bottom: var(--typography--margin--bottom);
+			margin-top:    var(--typography--margin--top);
+			
+			&:before, &:after { display: none } // Collides with the marker, so we use the margin.
+    }
+
+    > dt,
+		> li {
+			display: list-item;
+		}
+  }
+
+  ul,
+	dl {
+		list-style-type: '–';
+		padding-left:    0.5em;
+	}
+
+	ul {
+		> li { 
+      padding-left: 0.666em;
+    }
+  }
+
+	figure {
+		img {
+			object-fit: contain;
+		}
+	}
+
+	iframe {
+		width: 100%;
+		aspect-ratio: var(--aspect-ratio, 16/9);
+	}
+}

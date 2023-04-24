@@ -1,0 +1,15 @@
+baseURL: http://wedding.tan-li.info
+languageCode: en-us
+title: Kelly Tan & Eric Li
+
+params:
+  ga: 'G-65504XST5T'
+
+disableKinds:
+  - "taxonomy"
+  - "term"
+  - "RSS"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

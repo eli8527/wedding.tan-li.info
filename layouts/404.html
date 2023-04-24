@@ -1,0 +1,21 @@
+{{define "bodyMeta"}}class="404"{{end}}
+
+{{define "title"}}
+  {{.Title | markdownify | plainify}} — {{ .Site.Title }}
+{{end}}
+
+{{define "og:title"}}
+  {{- .Title | markdownify | plainify}} — {{ .Site.Title -}}
+{{end}}
+
+{{define "og:description"}}
+  {{- .Content | plainify | truncate 250 -}}
+{{end}}
+
+{{ define "main" }}
+  not found
+{{ end }}
+
+{{define "footer"}}
+  
+{{end}}

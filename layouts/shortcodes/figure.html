@@ -1,0 +1,15 @@
+{{- $classes := "" -}}
+{{- if .Get "class" }}
+  {{$classes = .Get "class"}}
+{{end -}}
+<figure class="{{$classes}}">
+  <img
+    {{- $original := (.Page.Resources.ByType "image").GetMatch (printf "%s" (.Get "src")) -}}
+    {{- $resized := ($original.Resize "1024x") }}
+    src="{{$resized.RelPermalink }}"
+    width="{{$resized.Width}}" 
+    height="{{$resized.Height}}"
+    alt="{{.Get "alt" | markdownify | safeCSS}}"
+  >
+  <figcaption><p><em>{{.Get "caption" | markdownify | safeCSS}}</em></p></figcaption>
+</figure>

@@ -1,0 +1,16 @@
+{{define "bodyMeta"}}class="home"{{end}}
+{{ define "main" }}
+  <main>
+    <nav>
+      <h1>{{.Title | markdownify}}</h1>
+      <h2>{{.Params.rsvp | markdownify}}</h2>
+    </nav>
+    {{- range .Params.Details}}
+      <div><p>{{. | markdownify}}</p></div>
+    {{end -}}
+    <div><p>{{.Content}}</p></div>
+  </main>
+{{ end }}
+
+{{define "footer"}}
+{{end}}

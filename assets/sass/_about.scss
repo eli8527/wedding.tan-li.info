@@ -1,0 +1,43 @@
+@use 'mixins' as *;
+@use 'typography';
+
+body.about {
+  .about__container {
+    @extend %type--layout;
+
+    display: grid;
+    align-items: start;
+    grid-template-areas: 
+      "portrait"
+      "about";
+          
+    column-gap: var(--gutter);
+    row-gap: calc(var(--typography--between) + var(--typography--line-height));
+
+    @include desktop {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+      grid-template-areas: "portrait about";
+    }
+
+    article {
+      grid-area: about;
+    }
+
+    figure {
+      grid-area: portrait;
+
+      @include desktop {
+        position: sticky;
+        top: var(--gutter);
+      }
+
+      img {
+        max-height: 50vh;
+        
+        @include desktop {
+          max-height: unset;
+        }
+      }
+    }
+  }
+}

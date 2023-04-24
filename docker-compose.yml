@@ -1,0 +1,17 @@
+version: '3'
+services:
+  hugo:
+    container_name: wedding
+    image: klakegg/hugo:latest-ext
+    command: server --disableLiveReload --port 9001 
+    volumes:
+      - ".:/src"
+    ports:
+      - "9001:9001"
+    environment:
+      VIRTUAL_HOST: wedding.local
+      VIRTUAL_PORT: 9001
+networks:
+  default:
+    external:
+      name: nginx-proxy

@@ -1,0 +1,38 @@
+@import '/fonts/heldane/stylesheet.css';
+
+%--shoulders {
+	--typography--shoulder:      calc(1 - var(--typography--cap-height)); // Remainder/overhang.
+	--typography--shoulder--top: calc(var(--typography--shoulder) - var(--typography--shoulder--bottom));
+}
+
+
+%font--heldane {
+  @extend %--shoulders;
+
+	--typography--cap-height:       0.646;
+	--typography--x-height:         0.450;
+	--typography--shoulder--bottom: 0.181;
+	
+	--typography--inset--left:  -0.019;
+	--typography--inset--right: -0.014;
+  --typography--tracking: 0;
+
+  --typography--underline:         0.06;
+	--typography--underline--shift: -0.06;
+
+  font-family: 'held', serif;
+}
+
+%font--underline {
+	--typography--decoration-thickness: calc(var(--typography--underline) * 1em);
+	--typography--underline-offset:     calc(var(--typography--underline--shift) * 1em);
+
+	text-decoration-color:     var(--color);
+	text-decoration-line:      underline;
+	text-decoration-thickness: var(--typography--decoration-thickness);
+	text-underline-offset:     calc(-1 * var(--typography--underline-offset) + var(--typography--decoration-thickness) + var(--typography--underline-offset--extra, 0em));
+}
+
+%font--underline--disable, .no-underline {
+	text-decoration: initial;
+}

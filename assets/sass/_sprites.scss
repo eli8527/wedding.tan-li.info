@@ -1,0 +1,50 @@
+@use 'typography';
+
+svg.sprite--circle {
+  @extend %type--layout;
+
+  width: var(--typography--cap);
+  height: var(--typography--cap);
+  fill: var(--color--blue);
+}
+
+
+svg.sprite--close {
+  @extend %type--layout;
+  --typography--size: var(--typography--size--h2);
+
+  width: var(--typography--cap);
+  height: var(--typography--cap);
+  stroke: var(--color--black);
+  stroke-width: 0.08em;
+}
+
+svg.sprite--arrow {
+  @extend %type--layout;
+
+  width: calc(1 * var(--typography--cap));
+  height: calc(1 * var(--typography--cap));
+  fill: none;
+  stroke: var(--color--blue);
+  stroke-width: .08em;
+  display: inline-block;
+  overflow: visible;
+
+  &.upper-right {
+    transform: rotate(-45deg);
+  }
+
+  a & {
+    margin-left: calc(0.25 * var(--typography--cap));
+  }
+}
+
+svg.sprite--moma {
+  @extend %type--layout;
+
+  height: calc(1.5 * var(--typography--cap)); 
+}
+
+a:has(svg) nobr {
+  white-space: nowrap;
+}
