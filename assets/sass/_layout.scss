@@ -49,6 +49,10 @@ main {
 
     > div {
       grid-area: var(--area);
+
+      &:has(figure) {
+        grid-area: var(--area);
+      }
     }
   }
 }
