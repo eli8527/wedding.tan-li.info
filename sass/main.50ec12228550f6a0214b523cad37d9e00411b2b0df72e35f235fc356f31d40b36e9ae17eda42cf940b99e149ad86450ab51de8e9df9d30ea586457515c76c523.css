@@ -364,6 +364,9 @@ main > div:has(figure) {
   main > div {
     grid-area: var(--area);
   }
+  main > div:has(figure) {
+    grid-area: var(--area);
+  }
 }
 
 :root {
