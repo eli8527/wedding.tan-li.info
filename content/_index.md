@@ -25,13 +25,13 @@ details:
   - |
     [Need directions? The boathouse is easily reachable by public transit or car](https://goo.gl/maps/JSmY7giXyXYbac837)
   - |
-    If you have some extra time, some of our favorite restaurants are [Scarr’s Pizza](https://goo.gl/maps/APfqBh2NjrA7aowg8), [Café Paulette](https://goo.gl/maps/pnkpFN15LPFpisG86), [Miss Ada](https://goo.gl/maps/BkTHNyZpNyJqMyRQ7), [Roman’s](https://goo.gl/maps/fBNc36a2uASwF1KS9), [Public Records](https://goo.gl/maps/HfBqWTHvEQVeNkFV6), and [KUUN](https://goo.gl/maps/waq4ydocbQJm6W4G9). We have more food options [here](https://goo.gl/maps/sFxi5ZCQPSvzkPo4A)
+    If you have some extra time, some of our favorite restaurants are <nobr>[Scarr’s Pizza](https://goo.gl/maps/APfqBh2NjrA7aowg8),</nobr> <nobr>[Café Paulette](https://goo.gl/maps/pnkpFN15LPFpisG86),</nobr> <nobr>[Miss Ada](https://goo.gl/maps/BkTHNyZpNyJqMyRQ7), [Roman’s](https://goo.gl/maps/fBNc36a2uASwF1KS9),</nobr> <nobr>[Public Records](https://goo.gl/maps/HfBqWTHvEQVeNkFV6),</nobr> and <nobr>[KUUN](https://goo.gl/maps/waq4ydocbQJm6W4G9).</nobr> We have more food options [here](https://goo.gl/maps/sFxi5ZCQPSvzkPo4A)
   - |
     {{< figure src="amtrak.jpeg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
   - |
     {{< figure src="ams2.jpeg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
   - |
-    Looking for places to stay? Besides Airbnb, some nearby hotels are the [Hampton Inn](https://www.hilton.com/en/hotels/nycbohx-hampton-brooklyn-downtown/), [Ace Hotel](https://acehotel.com/brooklyn/), and [Sheraton](https://www.marriott.com/en-us/hotels/nycys-sheraton-brooklyn-new-york-hotel/overview/)
+    Looking for places to stay? Besides Airbnb, some nearby hotels are the <nobr>[Hampton Inn](https://www.hilton.com/en/hotels/nycbohx-hampton-brooklyn-downtown/),</nobr> <nobr>[Ace Hotel](https://acehotel.com/brooklyn/),</nobr> and [Sheraton](https://www.marriott.com/en-us/hotels/nycys-sheraton-brooklyn-new-york-hotel/overview/)
   - |
     {{< figure src="taiwan2.jpeg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
   - |
