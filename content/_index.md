@@ -7,13 +7,17 @@ rsvp: |
     [RSVP](https://withjoy.com/eric-kelly/rsvp)
 details:
   - |
-    {{< figure src="cherry.jpg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
+    *You are invited to celebrate the wedding of Kelly Tan and Eric Li*
   - |
-    {{< figure src="engagement.jpeg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
+    {{< figure src="e1.jpg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
+  - |
+    {{< figure src="e3.jpg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
   - |
     [Your presence is more than enough, but if you’re looking for gift ideas, you can view our registry](https://withjoy.com/eric-kelly/registry)
   - |
-    {{< figure src="taiwan.jpeg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
+    {{< figure src="e4.jpg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
+  - |
+    {{< figure src="e2.jpg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
   - |
     *Schedule*  
     Saturday — Afternoon/evening barbecue at our place, details to follow  
@@ -24,6 +28,10 @@ details:
     {{< figure src="moon.jpeg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
   - |
     [Need directions? The boathouse is easily reachable by public transit or car](https://goo.gl/maps/JSmY7giXyXYbac837)
+  - |
+    {{< figure src="cherry.jpg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
+  - |
+    {{< figure src="engagement.jpeg" caption="Cherry blossoms at Brooklyn Botanical Garden" alt="Cherry blossoms" >}}
   - |
     If you have some extra time, some of our favorite restaurants are <nobr>[Scarr’s Pizza](https://goo.gl/maps/APfqBh2NjrA7aowg8),</nobr> <nobr>[Café Paulette](https://goo.gl/maps/pnkpFN15LPFpisG86),</nobr> <nobr>[Miss Ada](https://goo.gl/maps/BkTHNyZpNyJqMyRQ7), [Roman’s](https://goo.gl/maps/fBNc36a2uASwF1KS9),</nobr> <nobr>[Public Records](https://goo.gl/maps/HfBqWTHvEQVeNkFV6),</nobr> and <nobr>[KUUN](https://goo.gl/maps/waq4ydocbQJm6W4G9).</nobr> We have more food options [here](https://goo.gl/maps/sFxi5ZCQPSvzkPo4A)
   - |
