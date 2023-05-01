@@ -323,7 +323,7 @@ section {
 }
 
 body {
-  background-color: rgba(var(--color--pink--rgb), 1);
+  background-color: var(--color--pink);
   color: var(--color--black);
 }
 
@@ -407,7 +407,6 @@ dl dd {
   --grid-columns: 12;
   --color--white: #FAFAFA;
   --color--pink: #FFEEF4;
-  --color--pink--rgb: 255, 238, 244;
   --color--gray: #ddd;
   --color--black: #1a1a1a;
   --transition--timing: 500ms;
