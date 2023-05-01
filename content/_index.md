@@ -26,7 +26,7 @@ details:
   - |
     [We would appreciate it if each of you illustrated the card included with your invite and brought it to the ceremony—here’s the file if you need an extra](invites-insert.pdf)
   - |
-    {{< figure src="ams.jpeg" caption="This was taken in the Netherlands, a country where Eric spent six years at a design studio LUST during his college&nbsp;years" alt="Kelly and Eric hugging during a sunny day in a park in the Netherlands" >}}
+    {{< figure src="ams.jpeg" caption="This was taken in the Netherlands, a country where Eric spent six months at a design studio LUST during his college&nbsp;years" alt="Kelly and Eric hugging during a sunny day in a park in the Netherlands" >}}
   - |
     {{< figure src="moon.jpeg" caption="Moon Moon came to us in January 2020, with Peaches coming a few months later. We are serious about our cats’&nbsp;birthdays!" alt="Kelly and Eric holding Moon Moon, one of their cats, and wearing handmade party hats" >}}
   - |
