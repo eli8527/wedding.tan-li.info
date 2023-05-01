@@ -7,7 +7,6 @@
     document.querySelectorAll("main > div").forEach((el) => {
       let minW = 2;
       if (el.classList.contains("primary") || el.querySelector(".primary") !== null) {
-        console.log(el);
         minW = 3;
       }
       let w = Math.round(Math.random() * 1 + minW);
@@ -20,6 +19,11 @@
       }
       el.style.setProperty("--area", `${row} / ${col} / ${row} / ${col + w}`);
       col += w;
+    });
+  });
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a").forEach((link) => {
+      link.setAttribute("target", "external");
     });
   });
 })();
