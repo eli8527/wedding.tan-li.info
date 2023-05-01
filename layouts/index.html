@@ -5,6 +5,7 @@
       <h1>{{.Title | markdownify}}</h1>
       <h2>{{.Params.rsvp | markdownify}}</h2>
     </nav>
+      <div class="primary"><p>{{.Params.invitation | markdownify}}</p></div>
     {{- range .Params.Details}}
       <div><p>{{. | markdownify}}</p></div>
     {{end -}}

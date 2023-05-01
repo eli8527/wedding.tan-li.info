@@ -9,7 +9,8 @@
 }
 
 body {
-  background-color: var(--color--pink);
+  background-color: rgba(var(--color--pink--rgb), 1);
+  color: var(--color--black);
 }
 
 nav {
@@ -62,4 +63,29 @@ main {
 
 section {
   @extend %constrain-width;
+}
+
+.primary {
+  padding: calc(1 * var(--gutter));
+  border: 1px solid var(--color--black);
+}
+
+.schedule {
+  @extend %type--layout;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--typography--line-height);
+}
+
+dl {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: calc(0.5 * var(--gutter));
+
+  dd {
+    display: flex;
+    flex-direction: column;
+    gap: var(--typography--between);
+  }
 }

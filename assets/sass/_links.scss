@@ -29,7 +29,7 @@ a, button:not([disabled]) {
   }
 }
 
-a[href*="https://"]::after {
+a[href]::after {
   content: '[↗]';
   // vertical-align: super;
   font-size: .5em;

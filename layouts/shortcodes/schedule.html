@@ -1,0 +1,15 @@
+<div class="schedule">
+  <p>Schedule</p>
+  {{range .Site.Data.schedule}}
+    <p>{{.date}}</p>
+    {{range .events}}
+      <dl>
+        <dt><p>{{.time}}</p></dt>
+        <dd>
+          <p>{{.description}}</p>
+          <p><em>{{.location}}</em></p>
+        </dd>
+      </dl>
+    {{end}}
+  {{end}}
+</div>
