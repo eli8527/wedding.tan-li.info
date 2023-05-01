@@ -10,7 +10,6 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('main > div').forEach((el) => {
     let minW = 2;
     if (el.classList.contains('primary') || el.querySelector('.primary') !== null) {
-      console.log(el)
       minW = 3;
     }
 
@@ -28,4 +27,10 @@ window.addEventListener('DOMContentLoaded', () => {
     col += w;
 
   })
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('a').forEach((link) => {
+    link.setAttribute('target', 'external');
+  });
 });
