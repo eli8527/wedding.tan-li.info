@@ -327,7 +327,7 @@ body {
   color: var(--color--black);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   nav {
     position: sticky;
     top: var(--gutter);
@@ -360,7 +360,7 @@ main > div {
 main > div:has(figure) {
   grid-column: span calc(0.5 * var(--grid-columns));
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   main {
     gap: calc(2 * var(--gutter));
   }
@@ -382,12 +382,18 @@ main > div:has(figure) {
   display: flex;
   flex-direction: column;
   gap: var(--typography--line-height);
+  container-type: inline-size;
 }
 
 dl {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: calc(0.5 * var(--gutter));
+}
+@container (min-width: 300px) {
+  dl {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
 }
 dl dd {
   display: flex;
@@ -418,7 +424,7 @@ dl dd {
     --typography--size--card: calc(var(--typography--size) * 1.375);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   :root {
     --typography--size: 2.0rem;
     --typography--size--card: calc(var(--typography--size) * 2.5);
