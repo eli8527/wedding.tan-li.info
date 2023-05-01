@@ -285,6 +285,9 @@ figure figcaption {
   opacity: 0;
   transition: 50ms linear all;
   position: absolute;
+  box-sizing: content-box;
+  padding: calc(0.25 * var(--gutter));
+  margin: calc(-0.25 * var(--gutter));
 }
 figure::after {
   content: " ";
