@@ -1,13 +1,13 @@
 <div class="schedule">
   <p>Schedule</p>
   {{range .Site.Data.schedule}}
-    <p>{{.date}}</p>
+    <p>{{.date | safeHTML}}</p>
     {{range .events}}
       <dl>
-        <dt><p>{{.time}}</p></dt>
+        <dt><p>{{.time | safeHTML}}</p></dt>
         <dd>
-          <p>{{.description}}</p>
-          <p><em>{{.location}}</em></p>
+          <p>{{.description | safeHTML}}</p>
+          <p><em>{{.location | safeHTML}}</em></p>
         </dd>
       </dl>
     {{end}}
