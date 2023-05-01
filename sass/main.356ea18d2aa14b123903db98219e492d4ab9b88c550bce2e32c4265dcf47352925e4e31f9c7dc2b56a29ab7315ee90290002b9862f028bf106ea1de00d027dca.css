@@ -375,6 +375,7 @@ main > div:has(figure) {
 .primary {
   padding: calc(1 * var(--gutter));
   border: 1px solid var(--color--black);
+  background-color: var(--color--white);
 }
 
 .schedule {
