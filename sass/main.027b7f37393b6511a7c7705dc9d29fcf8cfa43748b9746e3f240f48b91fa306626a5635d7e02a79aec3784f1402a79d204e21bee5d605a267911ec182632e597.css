@@ -387,6 +387,16 @@ main > div:has(figure) {
   gap: var(--typography--line-height);
   container-type: inline-size;
 }
+.schedule ol {
+  display: flex;
+  flex-direction: column;
+  gap: calc(2 * var(--typography--line-height));
+}
+.schedule ol li {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1 * var(--typography--line-height));
+}
 
 dl {
   display: grid;
