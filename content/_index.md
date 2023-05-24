@@ -13,7 +13,7 @@ details:
   - |
     {{< figure src="pp_traced.svg" class="no-hover" alt="Illustration of Kelly and Eric, with their cats, by Priscilla Pun" >}}
   - |
-    [Your presence is more than enough—but if you’re looking for gift ideas, you can view our&nbsp;registry](https://withjoy.com/eric-kelly/registry)
+    [Your presence is more than enough—but if you’re looking for gift ideas, you can view our&nbsp;registry (or give a gift of your own choosing)](https://withjoy.com/eric-kelly/registry)
   - |
     {{< figure src="aya_03.jpg" caption="We’re excited to see you all and celebrate our friendships throughout the&nbsp;years" alt="Kelly and Eric smiling, with a plush penguin figurine in the background" >}}
   - |
