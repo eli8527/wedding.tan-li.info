@@ -6,10 +6,12 @@ title: |
 rsvp: |
     [RSVP](https://withjoy.com/eric-kelly/rsvp)
 invitation: |
-    *You’re invited to the wedding of Kelly Tan & Eric Li, taking place on September 10, 2023, 6:00 PM at the Prospect Park Boathouse, in Brooklyn, New&nbsp;York*  
+    *You’re invited to the wedding of Kelly Tan & Eric Li, taking place on September 10, 2023, 6:00 PM at the Prospect Park Boathouse in Brooklyn, New&nbsp;York*  
     <br>
     [Please RSVP by July&nbsp;28](https://withjoy.com/eric-kelly/rsvp)
 details:
+  - |
+    {{< figure src="pp.jpg" class="no-hover"  alt="Illustration of Kelly and Eric, with their cats, by Priscilla Pun" >}}
   - |
     {{< figure src="e2.jpg" caption="We are serious people with serious cats—Moon Moon (black) and Peaches&nbsp;(tabby)" alt="Kelly and Eric sitting with serious expressions, holding their two cats Peaches and Moon Moon" >}}
   - |
@@ -17,7 +19,7 @@ details:
   - |
     [Your presence is more than enough—but if you’re looking for gift ideas, you can view our&nbsp;registry](https://withjoy.com/eric-kelly/registry)
   - |
-    {{< figure src="e3.jpg" caption="We’re excited to see you all and celebrate our friendships throughout the&nbsp;years" alt="Kelly and Eric smiling, with a plush penguin figurine in the background" >}}
+    {{< figure src="aya_03.jpg" caption="We’re excited to see you all and celebrate our friendships throughout the&nbsp;years" alt="Kelly and Eric smiling, with a plush penguin figurine in the background" >}}
   - |
     {{< figure src="e4.jpg" caption="One of the things we did during COVID was build a pair of wooden chairs designed by Enzo&nbsp;Mari" alt="Kelly and Eric sitting on wooden chairs designed by Italian designer Enzo Mari that we built during COVID" >}}
   - |
@@ -52,5 +54,5 @@ details:
   - |
     Any more questions? Just let us know! We look forward to seeing you in&nbsp;September
   - |
-    {{< figure src="bh.jpg" class="boathouse"  alt="Prospect park boathouse sketch" >}}
+    {{< figure src="bh.jpg" class="no-hover"  alt="Prospect park boathouse sketch" >}}
 ---
