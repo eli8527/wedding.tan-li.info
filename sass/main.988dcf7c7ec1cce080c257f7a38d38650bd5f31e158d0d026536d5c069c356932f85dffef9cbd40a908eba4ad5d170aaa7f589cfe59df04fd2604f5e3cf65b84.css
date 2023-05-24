@@ -363,6 +363,9 @@ main > div {
 main > div:has(figure) {
   grid-column: span calc(0.5 * var(--grid-columns));
 }
+main > div:has(.no-hover) {
+  grid-column: span calc(1 * var(--grid-columns));
+}
 @media (min-width: 1024px) {
   main {
     gap: calc(2 * var(--gutter));
@@ -371,6 +374,9 @@ main > div:has(figure) {
     grid-area: var(--area);
   }
   main > div:has(figure) {
+    grid-area: var(--area);
+  }
+  main > div:has(.no-hover) {
     grid-area: var(--area);
   }
 }
