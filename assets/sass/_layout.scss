@@ -78,6 +78,18 @@ section {
   flex-direction: column;
   gap: var(--typography--line-height);
   container-type: inline-size;
+
+  ol {
+    display: flex;
+    flex-direction: column;
+    gap: calc(2 * var(--typography--line-height));
+
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: calc(1 * var(--typography--line-height));
+    }
+  }
 }
 
 dl {

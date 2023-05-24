@@ -1,15 +1,19 @@
 <div class="schedule">
   <p>Schedule</p>
-  {{range .Site.Data.schedule}}
-    <p>{{.date | safeHTML}}</p>
-    {{range .events}}
-      <dl>
-        <dt><p>{{.time | safeHTML}}</p></dt>
-        <dd>
-          <p>{{.description | safeHTML}}</p>
-          <p><em>{{.location | safeHTML}}</em></p>
-        </dd>
-      </dl>
+  <ol>
+    {{range .Site.Data.schedule}}
+      <li>
+        <p>{{.date | safeHTML}}</p>
+        {{range .events}}
+          <dl>
+            <dt><p>{{.time | safeHTML}}</p></dt>
+            <dd>
+              <p>{{.description | safeHTML}}</p>
+              <p><em>{{.location | safeHTML}}</em></p>
+            </dd>
+          </dl>
+        {{end}}
+      </li>
     {{end}}
-  {{end}}
+  </ol>
 </div>
