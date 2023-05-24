@@ -11,18 +11,18 @@ invitation: |
     [Please RSVP by July&nbsp;28](https://withjoy.com/eric-kelly/rsvp)
 details:
   - |
-    {{< figure src="pp.jpg" class="no-hover"  alt="Illustration of Kelly and Eric, with their cats, by Priscilla Pun" >}}
+    {{< figure src="pp_traced.svg" class="no-hover" alt="Illustration of Kelly and Eric, with their cats, by Priscilla Pun" >}}
+  - |
+    [Your presence is more than enough—but if you’re looking for gift ideas, you can view our&nbsp;registry](https://withjoy.com/eric-kelly/registry)
   - |
     {{< figure src="aya_03.jpg" caption="We’re excited to see you all and celebrate our friendships throughout the&nbsp;years" alt="Kelly and Eric smiling, with a plush penguin figurine in the background" >}}
   - |
     {{< figure src="engagement.jpeg" caption="We got engaged on June 12, 2022 on a small sandy outlook in&nbsp;Hawaii " alt="Kelly holding a lava rock, pretending it is her engagement ring diamond" >}}
   - |
-    [Your presence is more than enough—but if you’re looking for gift ideas, you can view our&nbsp;registry](https://withjoy.com/eric-kelly/registry)
-  - |
-    {{< figure src="ams.jpeg" caption="This was taken in the Netherlands, a country where Eric spent six months at a design studio LUST during his college&nbsp;years" alt="Kelly and Eric hugging during a sunny day in a park in the Netherlands" >}}
-  - |
     Our wedding dresscode is semi-formal / garden attire. The ceremony will take place outdoors, and the reception will be&nbsp;indoors
   - <div class="primary">{{< schedule >}}</div>
+  - |
+    {{< figure src="ams.jpeg" caption="This was taken in the Netherlands, a country where Eric spent six months at a design studio LUST during his college&nbsp;years" alt="Kelly and Eric hugging during a sunny day in a park in the Netherlands" >}}
   - |
     {{< figure src="cherry.jpg" caption="Cherry blossoms at Brooklyn Botanical Garden, as captured by&nbsp;Priscilla" alt="Kelly and Eric looking at each other while surrounded by cherry blossoms" >}}
   - |
@@ -54,5 +54,5 @@ details:
   - |
     Any more questions? Just let us know! We look forward to seeing you in&nbsp;September
   - |
-    {{< figure src="bh.jpg" class="no-hover"  alt="Prospect park boathouse sketch" >}}
+    {{< figure src="boathouse.svg" class="no-hover"  alt="Prospect park boathouse sketch" >}}
 ---

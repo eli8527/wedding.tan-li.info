@@ -45,6 +45,10 @@ main {
     &:has(figure) {
       grid-column: span calc(0.5 * var(--grid-columns));
     }
+
+    &:has(.no-hover) {
+      grid-column: span calc(1 * var(--grid-columns));
+    }
   }
 
   @include desktop {
@@ -54,6 +58,10 @@ main {
       grid-area: var(--area);
 
       &:has(figure) {
+        grid-area: var(--area);
+      }
+
+      &:has(.no-hover) {
         grid-area: var(--area);
       }
     }
