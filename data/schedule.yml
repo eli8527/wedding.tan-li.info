@@ -1,11 +1,12 @@
-- date: Saturday, September&nbsp;9
-  events:
-    - time: 4:30&nbsp;PM
-      description: Afternoon hang and&nbsp;BBQ
-      location: Our place
 - date: Sunday, September&nbsp;10
   events:
     - time: 6:00&nbsp;PM
-      description: Ceremony and&nbsp;Reception
+      description: Ceremony begins&nbsp;promptly
+      location: Prospect Park&nbsp;Boathouse
+    - time: 6:30&nbsp;PM
+      description: Cocktail&nbsp;hour
+      location: Prospect Park&nbsp;Boathouse
+    - time: 7:30&nbsp;PM
+      description: Reception
       location: Prospect Park&nbsp;Boathouse
   
