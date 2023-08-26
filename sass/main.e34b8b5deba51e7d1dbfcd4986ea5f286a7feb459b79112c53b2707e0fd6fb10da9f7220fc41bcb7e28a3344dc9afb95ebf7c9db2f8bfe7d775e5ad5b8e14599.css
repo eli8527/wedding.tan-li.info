@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import '/fonts/heldane/stylesheet.css';
 html *:where(:not(audio, canvas, iframe, img, svg, video):not(svg *, symbol *)) {
   all: unset;
@@ -173,14 +172,14 @@ td {
 }
 @supports (display: flow-root) {
   strong,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-td {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  td {
     display: flow-root;
   }
 }
